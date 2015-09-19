@@ -27,6 +27,8 @@ BOARD_HARDWARE_CLASS += device/sony/z3c/cmhw
 
 # Kernel properties
 TARGET_KERNEL_CONFIG := cm_shinano_aries_defconfig
+BOARD_KERNEL_SEPARATED_DT := true
+BOARD_KERNEL_CMDLINE := selinux=0 firmware_class.path=/system/etc/firmware
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 25
